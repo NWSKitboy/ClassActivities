@@ -10,10 +10,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Testing page</title>
+    <meta name="description" content=" This is the description of the webpage, should be no more than 160 characters" >
+
     
 </head>
 <body>
-    
+    this text here will be shown
+
+<!-- tests for different font styles -->
+
+    <h1>test <u>test</u> <strong>test</strong> <em>test</em> </h1>
+    <h2>test <u>test</u> <strong>test</strong> <em>test</em> </h2>
+    <h3>test <u>test</u> <strong>test</strong> <em>test</em> </h3>
+    <p>test <u>test</u> <strong>test</strong> <em>test</em> </p>
+
+<!-- putting them all together in one -->
+
+    <p><u><strong><em> test test test test </em></u></strong></p>
+
+
+    <u> underline </u>
+
+    <strong> bold</strong>
+
+    <em> italic</em>   
+     
+<!-- This next section has to do with quotations/citations -->
+
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+    <q cite="www.cnn.com">
+        The otter pulled the young child underwater with the mother still on the dock at Bremerton Marina in Kitsap County. </q>
+
+    </p>
+
+    <p>
+        <blockquote cite="www.cnn.com">
+            The otter pulled the young child underwater with the mother still on the dock at Bremerton Marina in Kitsap County.
+        </blockquote>
+    </p>
+
+<!-- Abbreviations -->
+
+    <p>
+        As per the <abbr title="World Health Organization">WHO,</abbr> the pandemic is over
+    </p>
+
+<!-- I missed what he said here about what this operator means, so look up address later you ding dong -->
+
+        <address>
+            <p>
+                45 Rue st.<br>
+                Waterloo, ON<br>
+                Waterloo.
+            </p>
+
+        </address>
+
+        <p>
+            2<sup>3</sup> = 8;<br>
+            66<sub>base 10</sub>
+        </p>
+<!-- something about <pre> preserving formatting for anything not just code and <code> holding code -->
+    <p>Enter <kbd>10</kbd> as input to following program</p>
+    <p> The below program will output <samp> Enter a Number</samp></p>
+        <code>
+            <pre>5
+        int main(){
+           <var>int x = 10; </var> 
+            printf("enter a number ");
+            scanf(%d", &x);
+
+            return 0;
+        }
+            </pre>
+        
+        </code>
+
+
+
 </body>
 </html>
