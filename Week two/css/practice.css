@@ -9,3 +9,9 @@ h2{
     background-color: green;
     border: 3px solid rgb(196, 41, 41);
 }
+
+h1{
+    color: turquoise;
+    background-color: brown;
+    border: 3px solid purple;
+}
