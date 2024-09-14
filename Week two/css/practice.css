@@ -1,0 +1,11 @@
+h3{
+    color: red;
+    background-color: black;
+    border: 3px solid rgb(243, 30, 30);
+}
+
+h2{
+    color: yellow;
+    background-color: green;
+    border: 3px solid rgb(196, 41, 41);
+}
