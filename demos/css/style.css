@@ -1,0 +1,55 @@
+body{
+    width: 1200px;
+    margin: auto;
+}
+header{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding:10px;
+    text-align: center;
+
+}
+header nav a{
+    margin:0px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+a:hover{
+    color: antiquewhite;
+    background-color: rgb(113, 113, 113);
+}
+
+
+img{
+    width:600px;
+    max-width:80% ;
+    padding-left: 250px;
+}
+
+
+footer{
+    padding:10px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+}
+
+main{
+    padding-left: 50px;
+}
+main h3,p{
+    text-indent: 20px;
+}
+div{
+    text-indent: 20px;
+    background-color: rgb(230, 230, 230);
+}
+
+dl{
+    text-indent: 20px;
+    padding-bottom: 10px;
+}

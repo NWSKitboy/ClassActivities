@@ -1,0 +1,64 @@
+main div h2{
+    border:1px solid green;
+    margin:0px;
+}
+/* hiearchical (spelling?) targeting. Space between each container, start with outer most container you want to target
+so in the above case, the h1 I want to target is inside div which is inside main. Will target all "descendants" as well */
+
+/* main h1{
+    border:1px solid green;
+    margin:0px;
+} */
+
+/* this one will also target the main div h1. use a > sign to stop that */
+
+main > h1{
+    border:1px solid red;
+    margin:0px;
+}
+/* now it only targets h1 in main and nothing within main */
+
+.pcls{
+    background-color: cornflowerblue;
+}
+
+/* to target a specific class use a . before the class name, dont need the container name */
+
+#p3id{
+    background-color: chartreuse;
+}
+
+/* use a # to target an id rather than a class. should use hiearchical targeting first, the class and id targeting
+should be last option */
+
+footer h3:nth-child(2){
+    background-color: violet;
+}
+/* use the :nth-child(x) to target a specific child container within a larger container
+so in this case it targets the 2nd h3 container within the footer container  */
+
+footer h3:nth-child(odd){
+    background-color: chocolate;
+}
+
+/* can also be used for even or odd styling simply by writing (even) or (odd) where the 2 is
+for example h3:nth-child(odd) would target the 1st, 3rd, and every other odd h3 container within the footer */
+
+section h1~h2{
+    background-color: pink;
+}
+
+/* adjustment sibling combinator versus generic sibling combinator (using + instead of ~ is only going to target the 
+immediate h2 that follows */
+
+a[title="test1"]{
+    background-color: aquamarine;
+}
+
+/* this will target <a> containers that have test 1 as the title listed within their container */
+
+
+/* applying style to multiple targets at once? try commas! */
+h4, h5{
+    background-color: orange;
+}

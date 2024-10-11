@@ -1,0 +1,87 @@
+body{
+    /* border:1px solid black; */
+    width:1200px;
+    margin:80px auto; 
+    /* margin:auto; only works in the body */
+}
+main{
+    border:1px solid red;
+    width:1000px;
+
+}
+h1{
+    border:1px solid blue;
+    width:900px;
+    margin:0px;
+    margin-left:20px;
+    margin-right:100px;
+    margin-top:40px;
+    margin-bottom:50px;
+}
+aside{
+    border:1px solid green;
+    width:800px;
+}
+h2{
+    border:1px solid orange;
+    width:700px;
+    padding:0px;
+    padding-left:20px;
+    padding-right:70px;
+    padding-top:40px;
+    padding-bottom:50px;
+}
+
+/* just dealing with margin sizes and such.
+margin modifiers in h1 would have the same effect as padding in main */
+
+/*     margin:20px 100px 30px 40px; putting all margins in like this
+would be the same as putting top, right, left, bottom
+so the top margin would be 20 pixels, the right 100, and so on
+same goes for padding */
+
+/* margin sizing will push the barrier between it and outer containers away from the center,
+padding will push the border of the current container out from its center 
+think of margin as a repulsion pushing things away, and a padding as litterally adding padding
+to the current containers border */
+
+/* width can be used to put a limit on how far the border  */
+
+
+img{
+    /* width:300px; */
+    max-width:80% ;
+    padding-left: 30px;
+}
+/* styling for images can be in pixels or percentages. pixels is better
+so it doesnt grow with the page/container. also, size the image properly for the
+size you want it to be, don't make it 4000 pixels and then size it to 400 */
+/* can set a relative size so it doesnt grow past a certain point but
+will shrink after a certain point */
+
+video{
+    width:400px;
+}
+a:hover{
+    color: green;
+}
+/* pseudo classes. use the pseudo class (a in this case) with a colon and you get
+new options. The hover feature makes it change when you hover over the
+object in question */
+a:focus{
+    background-color: aquamarine;
+}
+/* focus is the effect when you hit tab the next option is highlighted
+or focused */
+a:active{
+    border: 1px solid red;
+    color: black;
+}
+/* a:visted is for links that have been clicked already, a:link
+for links that have not been clicked yet */
+a:visited{
+    color: orange;
+}
+a:link{
+    color: chartreuse;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* all of these style additions should be done on a css file but they are inline instead so i can 
+find them easier for examples */
+    </style>
+</head>
+<body>
+    <p>good god Im so ready for this class to be over im so tired and want FOOOOOOOOOD</p>
+
+    <h2 style="color: red;"> you arent a real<h2 style="color: green;"> gamer unless</h2> 
+    <h2 style="color: blue;">you use </h2> 
+    <h1 style="color: red;">R</h1>
+    <h1 style="color: green;">G</h1><h1 style="color: blue;">B</h1> </h2>
+
+<!-- rgba adds a transparency layer. known as alpha channel -->
+    <h1 style="color: rgba(90, 245, 43, 0.35);">
+        test
+    </h1>
+
+<!-- when using hexadecimal. if the numbers are repeating (eg #ff7755) you can simply put #f75 for the same effect -->
+ <h2 style="color: #ff7755;">
+    hexademcial
+ </h2>
+
+<!-- can give dimensions in inches or millimetres or pixel. 
+ absolute units are mm and in. can also use relative to the parent percentage (50%)
+ cant use relative percentage for height -->
+ <h2 style="border: 1px solid red; width:300px;">
+    test border size
+ </h2>
+
+ <h2 style="border: 2px solid red; width:50%; height:45%;">
+    test border size
+ </h2>
+
+ <h2 style="border: 1px solid red; width:10mm;">
+    test border size
+ </h2>
+
+ <h2 style="border: 1px solid red; width:3in;">
+    test border size
+ </h2>
+
+ <h2 style="border: 1px solid red; height:300px;">
+    test border size
+ </h2>
+
+ <!-- em is a relative unit relative to the text width -->
+ <h1 style="border: 1px solid red; width:15em; height:200px;">
+    test border size
+ </h1>
+
+ <!-- rem is relative to the font size of the root element -->
+<!-- vw and vh means viewport width and viewport height. makes the item grow/shrink with the webpage -->
+<h1 style="border: 1px solid red; width:50vw; height:75vh;">
+   test border size
+</h1>
+
+<!-- viewport w can be used as a percentage as well but is relative to the parent 
+ not the viewport so they are different -->
+
+<!-- can give font size in relative units or absolute units. relative is based on the container -->
+<!-- 100% for example comes from parent font size not h1, in this case it is the body tag. 
+ so it will be different than h1. using relative sizes for fonts is based on the parent (body) while width
+ is based on the container (h1) -->
+
+
+
+ <!-- the three font names here is a fallback policy. gives three options to ensure the font is available
+  so if courier new isnt available it will try courier, then monospace, then the default font -->
+
+  <!-- font size = size
+   font family = font type
+   font weight = thickness
+   font style = italics/boldness -->
+ <h1 style="border: 1px solid red; width:10em; height:200px; font-size:300%; font-family: 'Courier New', Courier, monospace; font-weight:lighter; font-style: italic;">
+   test border size
+</h1>
+</body>
+</html>
